@@ -1,6 +1,10 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <header>
   <div class="menu">
+    <!-- <span class="header_text"> 🦄</span> -->
+    <a href="/">
+      <img src="/assets/eyehole.png" id="header_img">
+    </a>
     <ul>
       {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}

@@ -4,4 +4,10 @@ source "https://rubygems.org"
 gemspec
 
 
-gem 'jekyll-seo-tag'
+group :jekyll_plugins do
+    gem 'jekyll'
+    gem "jekyll-seo-tag"
+    # gem "jekyll-paginate-v2"
+    # gem "jekyll-assets"
+end
+

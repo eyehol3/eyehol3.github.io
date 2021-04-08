@@ -1,13 +1,44 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+    font-family: 'iAWriterMonoS';
+    src:  url('../assets/Webfonts/iAWriterMonoS-Bold.woff2') format('woff2'),
+          url('../assets/Webfonts/iAWriterMonoS-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'iAWriterMonoS';
+    src:  url('../assets/Webfonts/iAWriterMonoS-BoldItalic.woff2') format('woff2'),
+          url('../assets/Webfonts/iAWriterMonoS-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'iAWriterMonoS';
+    src:  url('../assets/Webfonts/iAWriterMonoS-Italic.woff2') format('woff2'),
+          url('../assets/Webfonts/iAWriterMonoS-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'iAWriterMonoS';
+    src:  url('../assets/Webfonts/iAWriterMonoS-Regular.woff2') format('woff2'),
+          url('../assets/Webfonts/iAWriterMonoS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
-$mobile-font-size:     12px !default;
-$base-line-height:     1.5 !default;
+$base-font-family:     'iAWriterMonoS', 'Source Code Pro', monospace !default;
+// $base-font-family:     'Source Code Pro', monospace !default;
+$base-font-size:       16px !default;
+$mobile-font-size:     16px !default;
+$base-line-height:     1.73 !default;
 $container-width:      90% !default;
 $container-max-width:  600px !default;
 
@@ -15,8 +46,12 @@ $container-max-width:  600px !default;
  * Global
  */
 body { background-color: var(--background-color);  margin: 0 auto;  padding: 0;  font-family: $base-font-family;  font-size: $base-font-size;  color: var(--text-color);  text-align: left;  line-height: $base-line-height !important; }
-h1, h2, h3, h4, h5, h6 { font-size: $base-font-size;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+h1, h2, h3, h4, h5, h6 { font-size: 1em;  margin: 0px;  margin-top: 22px;  font-weight: bold;  color: var(--text-color); }
+h1 { font-size: 2.5em; }
+h2 { font-size: 2.0em; }
+h3 { font-size: 1.5em; }
 p, ul, ol { margin: 0px;  color: var(--text-color); }
+p { padding-top: 1em; color: rgba(var(--text-color), 0.87);}
 a { text-decoration: underline;  color: var(--link-color); }
 a:hover { color: var(--background-color); background-color: var(--base-color); }
 .primary-text { color: var(--primary-color); }
@@ -54,12 +89,27 @@ footer { margin-bottom: 20px; }
 /**
  * Header/Navigation
  */
-.menu { border-top: var(--border);  border-bottom: var(--border);  margin-bottom: 25px; }
+.menu { border-top: var(--border);  border-bottom: var(--border);  
+    margin-bottom: 25px; }
 .menu ul { margin-top: 12px;  margin-bottom: 12px;  padding-left: 0px;  list-style-type: none;  text-align: right; }
 .menu ul li { display: inline;  margin-left: 10px; }
 .menu ul li a { text-decoration: none;  color: var(--text-color); }
 .menu ul li a:hover { text-decoration: none; color: var(--background-color); background-color: var(--base-color); }
 
+.header_text { text-align: left; 
+    position: absolute; 
+    margin-top: 6px;  margin-bottom: 12px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#header_img {
+    max-width:100%;
+    max-height: 34px;
+    position: absolute;
+    vertical-align: middle;
+    padding-top: 4px;
+}
 /**
  * Form
  */
