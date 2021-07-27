@@ -5,5 +5,5 @@ _site
 Gemfile.lock
 .jekyll-cache/
 .DS_store
-content/
-journal/
+# content/
+# journal/
