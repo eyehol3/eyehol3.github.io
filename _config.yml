@@ -1,6 +1,6 @@
 # Example Site settings
 title: eyeholle's webpage
-#google_analytics: UA-NNNNNNNN-N
+google_analytics: G-MDBFWN0P8F
 
 #header_pages:
 #  - index.md
@@ -16,7 +16,7 @@ plugins:
   #  - jekyll-paginate-v2
   #  - jekyll-assets
 
-permalink: /:categories/:title
+permalink: /:title
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
