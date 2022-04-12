@@ -1,6 +1,7 @@
 ---
 layout: post
 title: BOMBL'OO NA TRANS1337
+starred: true
 ---
 # BOMBL'OO NA TRANS1337
 (трошки бомблю на трансліт)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: repetition legitimizes
+starred: true
 ---
 
 # мысли сложились в кучу

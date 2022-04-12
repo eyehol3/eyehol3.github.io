@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
-    <div class="container">
+<body>
+<div class="post">
 
-      {%- include header.html -%}
+    {%- include header.html -%}
 
-    <main>
-      {{ content }}
-    </main>
+<main>
+    {{ content }}
+</main>
 
-    {%- include footer.html -%}
+{%- include footer.html -%}
 
-    </div>
-  </body>
-</html>
+</div>
+</body>
+
+<script>
+document.body.style.animationDelay = -Math.floor(Math.random() * 250) + "s"
+
+var rainbowState = localStorage.getItem('isRainbow');
+console.log(rainbowState)
+console.log(rainbowState === null)
+if (rainbowState === "rainbow_yes" || rainbowState === null ) {
+    document.body.classList.toggle("rainbow_yes")
+}      
+
+function toggleRainbow(e) {
+    document.body.classList.toggle("rainbow_yes") 
+    if (document.body.classList.contains("rainbow_yes")){
+        document.body.style.animationDelay = -Math.floor(Math.random() * 250) + "s"
+        localStorage.setItem('isRainbow', "rainbow_yes");                
+    } else {
+        localStorage.setItem('isRainbow', "rainbow_no");                
+    }
+}
+document.querySelector(".rainbow").onclick = function(e) {
+      toggleRainbow(e);
+  }
+</script>
