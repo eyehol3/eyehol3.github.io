@@ -4,7 +4,7 @@
 {%- include head.html -%}
 
 <body>
-<div class="post">
+<div class="post page">
 
     {%- include header.html -%}
 
@@ -21,8 +21,6 @@
 document.body.style.animationDelay = -Math.floor(Math.random() * 250) + "s"
 
 var rainbowState = localStorage.getItem('isRainbow');
-console.log(rainbowState)
-console.log(rainbowState === null)
 if (rainbowState === "rainbow_yes" || rainbowState === null ) {
     document.body.classList.toggle("rainbow_yes")
 }      

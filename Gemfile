@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source "https://rubygems.org"
-gemspec
+# gemspec
 
 
 group :jekyll_plugins do
@@ -12,3 +12,4 @@ group :jekyll_plugins do
     gem "github-pages" 
 end
 
+gem "webrick", "~> 1.7"
