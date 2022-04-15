@@ -1,10 +1,7 @@
 ---
 layout: default
-<!-- pagination: 
-  enabled: false
-  category: journal, quality_content -->
 ---
-<h1>привіт. γεια σας. hola. hello. 今日は. cześć. bonjour. ahoj</h1>
+<h1 class="title">привіт. γεια σας. hola. hello. cześć. ciao</h1>
 
 {% assign published_posts = site.posts | where_exp: "post", "post.draft != true" %}
 {% assign posts_by_year = published_posts | group_by_exp: "post", "post.date | date: '%Y'"  %}

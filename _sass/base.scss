@@ -68,14 +68,14 @@
 
   .footer, .menu { width: 544px; margin: 0 auto 0; padding: 0 0 50px 0; vertical-align: top; display: flex; }
   .footer li, .menu li { list-style: none; margin: 0 1em 0 0; vertical-align: top; }
-  .footer li, .menu li { color: rgba(0,0,0,0.3); border-color: transparent; display: inline-block; }
+  .post-date, .footer li, .menu li { color: rgba(0,0,0,0.3); border-color: transparent; display: inline-block; }
   
   #header_img, .menu li a, .footer li a { border-bottom: none; color: rgba(0,0,0,0.5); transition: all 0.1s;}
   .menu li a:hover, .footer li a:hover { border-bottom: none; color: #000; transition: all 0.1s;}
 //   .menu ul li a:hover { border-bottom: none;  color: #000; }
 //   .menu ul li, menu ul li a:hover { border-bottom: 2px solid rgba(0,0,0,0.2); }
   .spacer { flex-grow: 1; }
-  .footer { padding: 50px 0;}
+    footer { padding: 50px 0;}
   .starred { margin: 0 0.5em 0 -1.5em; }
   
   .post { width: 544px; margin: 15px auto; }
@@ -93,7 +93,7 @@
   h1 { font-size: 1.7em; }
   h2 { font-size: 1.4em; }
   h1 + h2 { margin: -0.75em 0 0.9em; }
-  .title { font-size: 2.5em; line-height: 50px; margin: 1.5em 0 0.75em 0; }
+  .title, article > h1:first-of-type { font-size: 2.5em; line-height: 50px; margin: 1.5em 0 0.75em 0; }
   
   p > img .fig, figure { margin: 2em 0; }
   img { max-width: 100%; }

@@ -3,9 +3,9 @@ layout: page
 title: journal
 permalink: /journal/
 ---
-# my journal and other notes idk
-<br>
+<h1 class="title"> my journal and other notes idk</h1>
 blablabla
+<br>
 <br>
 
   {% for post in site.posts %}

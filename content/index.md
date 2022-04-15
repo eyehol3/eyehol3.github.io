@@ -3,8 +3,8 @@ layout: page
 title: content
 permalink: /questionable_content/
 ---
-<h1> quality_content <sup>trademark</sup><br></h1>
-
+<h1 class="title"> quality_content <sup>trademark</sup></h1>
+<br>
   {% for post in site.posts %}
   {% if post.categories.last contains "content" %}
     
