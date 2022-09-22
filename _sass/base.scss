@@ -136,6 +136,13 @@
   sup, sub, .note-ref, .note-number { vertical-align: baseline; position: relative; font-size: .7em; line-height: 1; }
   sup, .note-ref, .note-number { bottom: 1.4ex; }
   sub { top: .5ex; }
+  table, th, td {
+    border: 1px dashed;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 0.5em;
+  }
   
   #header_img { float: left; width: 80px; height: 100%; margin-left: -150px; margin-top: 70px; }
 //   #header_img { float: left; width: 30px; height: 100%; }
