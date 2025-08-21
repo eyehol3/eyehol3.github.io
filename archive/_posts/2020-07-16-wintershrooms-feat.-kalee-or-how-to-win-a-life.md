@@ -2,6 +2,7 @@
 layout: post
 permalink: :categories/:title
 starred: true
+published: false
 ---
 # как выиграть жизнь
 
