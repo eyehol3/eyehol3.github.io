@@ -11,6 +11,10 @@
   @font-face { font-family: 'body'; font-style: italic; src: url('/fonts/IBMPlexSans-TextItalic.woff') format('woff'); }
   @font-face { font-family: 'body'; font-weight: 800;   src: url('/fonts/IBMPlexSans-Bold.woff') format('woff'); }
   
+//   @font-face { font-family: 'body';                     src: url('/fonts/Bookerly.ttf') format('truetype'); }
+//   @font-face { font-family: 'body'; font-style: italic; src: url('/fonts/Bookerly Italic.ttf') format('truetype'); }
+//   @font-face { font-family: 'body'; font-weight: 800;   src: url('/fonts/Bookerly Bold.ttf') format('truetype'); }
+  
   @font-face { font-family: 'mono';                     src: url('/fonts/ibm-plex-mono-v12-latin-ext_cyrillic-ext-regular.woff') format('woff'); }
   
   body { font: 24px/155% body, sans-serif; }

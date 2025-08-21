@@ -9,6 +9,8 @@ google_analytics: G-MDBFWN0P8F
 #style: light # dark (default) or light
 #listen_for_clients_preferred_style: true # true or false (default)
 
+markdown: kramdown
+
 plugins:
    - jekyll-seo-tag
   #  - jekyll-paginate-v2
