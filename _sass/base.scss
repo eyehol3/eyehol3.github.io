@@ -11,9 +11,9 @@
   @font-face { font-family: 'body'; font-style: italic; src: url('/fonts/IBMPlexSans-TextItalic.woff') format('woff'); }
   @font-face { font-family: 'body'; font-weight: 800;   src: url('/fonts/IBMPlexSans-Bold.woff') format('woff'); }
   
-//   @font-face { font-family: 'body';                     src: url('/fonts/Bookerly.ttf') format('truetype'); }
-//   @font-face { font-family: 'body'; font-style: italic; src: url('/fonts/Bookerly Italic.ttf') format('truetype'); }
-//   @font-face { font-family: 'body'; font-weight: 800;   src: url('/fonts/Bookerly Bold.ttf') format('truetype'); }
+  @font-face { font-family: 'body';                     src: url('/fonts/Bookerly.ttf') format('truetype'); }
+  @font-face { font-family: 'body'; font-style: italic; src: url('/fonts/Bookerly Italic.ttf') format('truetype'); }
+  @font-face { font-family: 'body'; font-weight: 800;   src: url('/fonts/Bookerly Bold.ttf') format('truetype'); }
   
   @font-face { font-family: 'mono';                     src: url('/fonts/ibm-plex-mono-v12-latin-ext_cyrillic-ext-regular.woff') format('woff'); }
   
@@ -30,7 +30,8 @@
     // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAQSURBVHgBAQUA+v8A/dsp/wfbAwFy+CMuAAAAAElFTkSuQmCC); /* #FDDB29 */
     background-color: hsl(29, 100%, 98%); /* fallback */
     // background-color: hsl(0, 0%, 100%); /* fallback */
-    color: #000;
+    // color: #000;
+    color: #222;
     -webkit-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
     -moz-font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
     font-feature-settings: "kern" 1,"liga" 1,"calt" 1;
